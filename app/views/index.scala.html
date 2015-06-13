@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>to-sho-kan</title>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+</head>
+<body>
+    <div id="container">
+        <div><a href="/">home</a></div>
+        <div><a href="/login">login</a></div>
+        <div><a href="/example/hoge">example/hoge</a></div>
+        <div><a href="/example/fuga">example/fuga</a></div>
+        <div v-component="{{main}}">
+        </div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/vue/0.11.0/vue.min.js"></script>
+    <script src="//cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+    <script src="@routes.Assets.at("javascripts/index.js")" type="text/javascript"></script>
+    <script type="text/v-template" id="login">
+        <h1>Login Form</h1>
+    </script>
+    <script type="text/v-template" id="home">
+        <h1>home</h1>
+    </script>
+    <script type="text/v-template" id="example">
+        <h1>example</h1>
+    </script>
+</body>
+</html>
